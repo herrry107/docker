@@ -11,4 +11,18 @@
 - We can install docker on any OS but Docker engine run natively on linux distribution.
 - Docker Written in **GO** language.
 - Docker is a tool that perform OS level virtualization, also known as containerization.
-- Before Docker many users faces the problem that a particular code is running in the developer system but not in the users system. 
+- Before Docker many users faces the problem that a particular code is running in the developer system but not in the users system.
+- Docker was first release in March 2013 it is developed y solomon nykes and sebastian panl.
+- Docker is a set of platform as a service that uses OS level virtualization whereas VMware uses hardware level virtualization.
+
+**Difference between Docker Container vs VMs**
+
+**Docker Container:** 
+- Low impact on OS, very fast, low disk space usage.
+- Sharing, distribution and re-building is easy.
+- Encapsulate apps instead of whole machine.
+
+**VMs:** 
+- High impact on OS, Slower, high disk usage.
+- Sharing, rebuilding and distribution is challenging.
+- Encapsulate whole machine. 
