@@ -1,3 +1,6 @@
+![Alt-text](https://github.com/herrry107/docker/blob/main/images/docker-image-container.png)
+![Alt-text](https://github.com/herrry107/docker/blob/main/images/components-of-docker.jpg)
+
 **Docker Daemon: ** 
 - Docker daemon runs on the HOST OS.
 - It is responsible for running containers to manage docker service.
