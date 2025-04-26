@@ -28,3 +28,9 @@
 - High impact on OS, Slower, high disk usage.
 - Sharing, rebuilding and distribution is challenging.
 - Encapsulate whole machine. 
+
+    **Advantage of Docker**
+- No pre-allocation of RAM
+- less Cost
+- It is light in weight
+- Continuous Integrity E
