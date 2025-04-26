@@ -29,8 +29,19 @@
 - Sharing, rebuilding and distribution is challenging.
 - Encapsulate whole machine. 
 
-    **Advantage of Docker**
+    **------ Advantage of Docker ------**
 - No pre-allocation of RAM
 - less Cost
 - It is light in weight
-- Continuous Integrity E
+- Continuous Integrity Efficiency: Docker enables you to build a container image and use that same images across every step of the deployment process.
+- It can run on physical Hardware, Virtual Hardware or on Cloud.
+- You can reuse image.
+- It took very less time to create container.
+
+    **------ Disadvantage of Docker ------**
+- Docker is not a good solution for application that requires rich GUI.
+- Difficult to manage large amount of container.
+- Docker does not provide cross-platform compatibility means if an application is designed to run in a docker container on windows, then it can't run on linux or vice-versa.
+- Docker is suitable when the development OS and Testing OS are same if the OS is different, we should use VMs.
+- No Solution for Data recovery & Backup.
+
