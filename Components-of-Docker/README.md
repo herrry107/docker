@@ -19,4 +19,17 @@
 Docker registory mangaes & Stores the docker images
 - Therer are 2 types of registery: 
 - **1) Public Registry:** Public registery is also called as docker hub.
-- **2) Private Registry:** It is used to share image within the enterprise 
+- **2) Private Registry:** It is used to share image within the enterprise
+
+**Docker Images:**
+- Docker images are the read only binary templates used to create docker containers or single file within the all dependencies and configuration required to run a program.
+
+***ways to create images***
+1) Take image from docker hub.
+2) Create image from docker file.
+3) Create image from existing docker container.
+
+**Docker Container:**
+- Containers hold the entire packages that is needed to run the application, In other words, we can say that, the image is a template and the container is a copy of that template.
+- Container is like a virtual machine.
+- Images becomes container when they run on docker engine.  
