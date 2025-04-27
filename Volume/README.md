@@ -51,3 +51,13 @@ docker run -it --name con4 -v /root/docker-practice/vol1:/mycon-vol --privileged
 docker run -it --name con4 -v "f:\docker\vol1":/mycon-vol --privileged=true ubuntu /bin/bash    
 </code></pre>
 
+<pre><code>docker volume ls</code></pre>
+<pre><code>docker volume create volume-name</code></pre>
+<pre><code>docker volume rm volume-name</code></pre>
+<pre><code>
+#remove all unused docker volume
+docker volume prune
+</code></pre>
+
+<pre><code>docker volume inspect volume-name</code></pre>
+<pre><code>docker container inspect container-name</code></pre>
