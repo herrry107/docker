@@ -17,3 +17,22 @@
 - Share volume among different containers.
 - Attach volume to containers.
 - On deleting container volume does not delete.
+
+**Creating Volume from Dokcerfile**
+<pre><code>
+FROM ubuntu
+VOLUME ["/myvolume"]
+</code></pre>
+
+<pre><code>docker build -t myimage .</code></pre>
+Now create a container from this image and run
+<pre><code>docker run -it --name con1 myimage /bin/bash</code></pre>
+Now you can see folder with name myvolume in container1 which act as a volume
+
+Now share volume with another container
+- container1 to container2
+<pre><code>
+#creating container2
+docker run -it --name con2 --privileged=true --volumes-from con1 ubuntu /bin/bash
+</code></pre>
+Now after creating container2, myvolume1 is visible. Whatever you do in one volume, can see from other volume.
