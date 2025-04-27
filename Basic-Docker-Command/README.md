@@ -61,6 +61,11 @@ docker start container-name
 docker stop container-name
 </code></pre>
 
+Exit from container withou stopping container
+<pre><code>
+Ctrl + P  then  Ctrl + Q
+</code></pre>
+
 Delete container
 <pre><code>
 docker rm container-name
