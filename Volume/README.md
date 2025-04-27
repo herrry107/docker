@@ -30,9 +30,24 @@ Now create a container from this image and run
 Now you can see folder with name myvolume in container1 which act as a volume
 
 Now share volume with another container
-- container1 to container2
+- Container1 to Container2
 <pre><code>
 #creating container2
 docker run -it --name con2 --privileged=true --volumes-from con1 ubuntu /bin/bash
 </code></pre>
 Now after creating container2, myvolume1 is visible. Whatever you do in one volume, can see from other volume.
+
+create volume by command without Dockerfile
+<pre><code>
+docker run -it --name con3 -v /volume3 ubuntu /bin/bash
+</code></pre>
+
+Now share volume with Host
+- Host to Container
+<pre><code>
+#for linux
+docker run -it --name con4 -v /root/docker-practice/vol1:/mycon-vol --privileged=true ubuntu /bin/bash #first path is host path and second one is container path
+#for windows
+docker run -it --name con4 -v "f:\docker\vol1":/mycon-vol --privileged=true ubuntu /bin/bash    
+</code></pre>
+
