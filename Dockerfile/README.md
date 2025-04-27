@@ -46,3 +46,18 @@ ENV myname pratik                      #create environment variable with name my
 COPY testfile1 /tmp                    #copy from local machine to docker image
 ADD test.tar.gz /tmp                   #like copy command
 </code></pre>
+
+**Dockerfile Example3**
+<pre><code>
+FROM node:20            #node image with version 20
+WORKDIR /myapp          #working directoy /myapp
+COPY . .                #copy all from local that folder to docker image
+RUN npm install         #command run on create image
+EXPOSE 3000             #expose port number
+CMD ["npm","start"]     #run command when container create, cmd command specify by comma
+</code></pre>
+
+To build image out of Dockerfile
+<pre><code>
+docker build -t myimg .  #build image from dockerfile
+</code></pre>
