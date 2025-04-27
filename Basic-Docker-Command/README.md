@@ -90,6 +90,11 @@ docker diff ubuntu1
 docker commit ubunut1 updated-image
 </code></pre>
 
-
+if we want to ignore some file when build docker image file name .dockerfile
+.dockerfile
+<pre><code>
+Dockerfile
+.git
+</code></pre>
 
 
