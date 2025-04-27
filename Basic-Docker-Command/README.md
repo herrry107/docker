@@ -33,6 +33,9 @@ docker run -p 5000:3000 image-name
 # -p: define port number first one is host machine port and seconde one is container port
 </code></pre>
 
+Check port is expose or not
+<pre><code>docker port container-name</code></pre>
+
 To check docker service is start or not
 <pre><code>
 service docker status
@@ -44,6 +47,9 @@ To go inside container
 <pre><code>
 docker attach container-name
 </code></pre>
+
+Similar like attach command but create new process
+<pre><code>docker exec -it con1 /bin/bash</code></pre>
 
 To see all containers
 <pre><code>
