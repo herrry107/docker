@@ -103,4 +103,39 @@ Dockerfile
 .git
 </code></pre>
 
+Publish image on Dockerhub
+<pre><code>
+docker login                            #with help of your credential first login to dockerhub
+docker tag image1 dockerid/new-image    #rename our image with docker id 
+docker push dockerid/new-image          #push image to dockerhub
+</code></pre>
 
+Pull image from dockerhub
+<pre><code>
+#pull image from dockerhub
+docker pull dockerid/new-image
+
+#run image
+docker run -it --name my-con dockerid/new-image /bin/bash
+</code></pre>
+
+**Some important commands**
+<pre><code>
+#stop all running containers
+docker stop $(docker ps -a -q)
+</code></pre>
+
+<pre><code>
+#delete all stopped containers
+docker rm $(docker ps -a -q)
+</code></pre>
+
+<pre><code>
+#delete all images
+docker rmi -f $(docker images -q)
+</code></pre>
+
+<pre><code>
+#delete single image
+docker rmi image-name
+</code></pre>
