@@ -45,5 +45,6 @@
 - Docker is suitable when the development OS and Testing OS are same if the OS is different, we should use VMs.
 - No Solution for Data recovery & Backup.
 
-[Folder from other repo](https://github.com/herrry107/docker/tree/main/Components-of-Docker)
+**Read All Docker Docs by these sequence**
+[1. Components of Docker](https://github.com/herrry107/docker/tree/main/Components-of-Docker)
 
