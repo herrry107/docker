@@ -17,3 +17,23 @@ Dokcerfile is basically a text file. It contains some set of instruction. Automa
 - ***ENTRYPOINT:*** Similar to CMD but has higher priority over CMD, first commands will be executed by ENTRYPOINT ony.
 
 - ***ENV:*** Environment Variables.
+
+**Dockerfile**
+1) Create a file named Dockerfile
+2) Add instructions in Dockerfile
+3) Build Dockerfile to create image
+4) Run image to create container
+
+**Dockerfile Example1**
+<pre><code>
+FROM ubuntu
+RUN echo "HEllo World" > /tmp/testfile.txt
+</code></pre>
+
+To create image out of Dockerfile
+<pre><code>
+docker build -t myimg .  #build image from dockerfile
+docker ps -a             #show all process
+docker images            #show all images
+</code></pre>
+
