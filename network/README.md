@@ -24,3 +24,10 @@ docker network create work
 
 **create container in defined network**
 <pre><code>docker run -it --network work --name con1 ubuntu</code></pre>
+
+**connect to container by network**
+<pre><code>
+#docker network connect network-name container-name
+docker network connect work con2
+</code></pre>
+
